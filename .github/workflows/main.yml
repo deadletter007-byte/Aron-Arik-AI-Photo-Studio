@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '.github/workflows/Aron-Arik-AI-Photo-Studio.zip'
+      - '.github/workflows/aron-&-arik-ai-photo-studio.zip'
       - 'android.yml'
 
 jobs:
@@ -16,8 +16,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extract project ZIP
-        run: |
-          unzip -o .github/workflows/Aron-Arik-AI-Photo-Studio.zip -d project
+        run: 
+          unzip -o '.github/workflows/aron-&-arik-ai-photo-studio.zip' -d project
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
